@@ -1,0 +1,26 @@
+
+<%- include("partials/header.ejs") -%>
+    <h1>Home</h1>
+
+    <p><%=homecontent%></p>
+
+ <% for(let i =0; i<posts.length; i++) { %>
+
+    <h3><%= posts[i].title %></h3>
+    <p style="display:inline"><%= posts[i].content.substring(0,100)+" ..."  %> </p>
+
+  <%  var redirectLink= "/posts/"+ posts[i]._id; %>
+
+      <a href= <%=redirectLink%> >Read more</a>
+
+<% } %>
+
+
+ <!-- <div  id = "mybutton"> -->
+   <!-- <a href="/compose" class="btn btn-info" id="mybutton" role="button">+Compose</a> -->
+ <!-- </div> -->
+ <div id="mybutton">
+  <a href="/compose" class="compose" role="button"> +Compose </a>
+ </div>
+
+<%- include("partials/footer.ejs") -%>
