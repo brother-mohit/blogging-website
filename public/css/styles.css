@@ -20,7 +20,7 @@
 }
 
 .footer {
-	position: absolute;
+	/* position: absolute; */
 	text-align: center;
 	bottom: 0;
 	width: 100%;
@@ -29,15 +29,15 @@
 }
 
 .footer p {
-	margin-top: 25px;
+	/* margin-top: 25px; */
 	font-size: 12px;
   color: #fff;
 }
-/* #mybutton {
+#mybutton {
   position: fixed;
   bottom: 4px;
   right: 10px;
-} */
+}
 
 /* #fixedbutton {
     position: fixed;
@@ -63,5 +63,5 @@
   width: 600px;
   overflow: hidden;
   text-overflow: ellipsis;
-  /* border: 1px solid #000000; */
+  border: 1px solid #000000; 
 } */

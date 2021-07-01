@@ -39,7 +39,7 @@ const Post = mongoose.model("Post",postSchema);
        {
            res.render('home.ejs',{homecontent:homeStartingContent, posts : posts});
        }
-       else cosole.log(err);
+       else console.log(err);
     });
     //  res.render('home.ejs',{homecontent:homeStartingContent, posts : posts});
 
